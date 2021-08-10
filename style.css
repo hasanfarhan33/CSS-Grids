@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box1 {
+  background: lightgreen;
+}
+
+.box2 {
+  background: lightsalmon;
+}
+
+.box3 {
+  background: lightblue;
+}
+
+main {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.box3 {
+  /* grid-column-start: 1;
+  grid-column-end: 3; */
+  grid-column: 1/3;
+}
